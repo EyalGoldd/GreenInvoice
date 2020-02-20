@@ -1,0 +1,10 @@
+{
+    "name": "eyalgo/event-handler",
+    "type": "library",
+	"autoload": {
+		"psr-4": {
+			"GreenInvoice\\": "src/"
+		}
+	},
+	"require": {}
+}
