@@ -43,8 +43,9 @@ class EventHandler implements IEventHandler
 	{
 		if ($event->pushImmediate()) {
 			$this->flushImmediate($event);
+		} else {
+			$this->eventQueue->add($event);
 		}
-		$this->eventQueue->add($event);
 	}
 
 	/**
